@@ -243,6 +243,16 @@
                     </execution>
                 </executions>
             </plugin>
+	    <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>2.8.2</version>
+            </plugin>
         </plugins>
 
         <pluginManagement>
@@ -261,16 +271,6 @@
                         <includes>
                             <include>**/PackageTests.java</include>
                         </includes>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-release-plugin</artifactId>
-                    <version>2.0</version>
-                    <configuration>
-                        <tagBase>
-                            https://svn.apache.org/repos/asf/webservices/wss4j/tags/
-                        </tagBase>
                     </configuration>
                 </plugin>
                 <plugin>
@@ -585,9 +585,9 @@
     </distributionManagement>-->
     <distributionManagement>
         <repository>
-            <id>wso2-maven2-repository</id>
-            <name>WSO2 Maven2 Repository</name>
-            <url>scp://dist.wso2.org/home/httpd/dist.wso2.org/maven2/</url>
+            <id>nexus-releases</id>
+            <name>WSO2 Nexus Release Repository</name>
+            <url>http://localhost:8081/nexus/service/local/staging/deploy/maven2/</url>
         </repository>
 <!--
         <snapshotRepository>

@@ -28,6 +28,14 @@
         Apache WSS4J Parent.
     </description>
 
+    <scm>
+        <connection>scm:git:https://github.com/Kishanthan/wso2-wss4j.git</connection>
+        <developerConnection>scm:git:https://github.com/Kishanthan/wso2-wss4j.git</developerConnection>
+        <url>https://github.com/Kishanthan/wso2-wss4j.git</url>
+        <tag>HEAD</tag>
+    </scm>
+
+
     <repositories>
        <repository>
            <id>wso2-nexus</id>
@@ -42,11 +50,11 @@
     </repositories>
 
     <distributionManagement>
-       <repository>
-           <id>wso2-maven2-repository</id>
-           <name>WSO2 Maven2 Repository</name>
-           <url>scp://dist.wso2.org/home/httpd/dist.wso2.org/maven2/</url>
-       </repository>
+        <repository>
+            <id>nexus-releases</id>
+            <name>WSO2 Nexus Release Repository</name>
+            <url>http://localhost:8081/nexus/service/local/staging/deploy/maven2/</url>
+        </repository>
        <snapshotRepository>
            <id>wso2-maven2-snapshot-repository</id>
            <name>WSO2 Maven2 Snapshot Repository</name>
@@ -58,4 +66,8 @@
         <module>modules/wss4j</module>
         <module>orbit</module>
     </modules>
+
+    <properties>
+        <project.scm.id>scm-server</project.scm.id>
+    </properties>
 </project>
