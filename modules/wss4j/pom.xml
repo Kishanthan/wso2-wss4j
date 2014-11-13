@@ -22,7 +22,7 @@
     <artifactId>wss4j</artifactId>
     <packaging>bundle</packaging>
     <name>WSS4J</name>
-    <version>1.5.11-wso2v8-SNAPSHOT</version>
+    <version>1.5.11-wso2v8</version>
     <description>
         Apache WSS4J is an implementation of the Web Services Security
         (WS-Security) being developed at OASIS Web Services Security TC.
@@ -114,7 +114,7 @@
             scm:svn:https://svn.apache.org/repos/asf/webservices/wss4j/trunk/
         </developerConnection>
         <url>http://svn.apache.org/viewvc/webservices/wss4j/trunk</url>
-      <tag>HEAD</tag>
+      <tag>wss4j-parent-4.3.1</tag>
   </scm>
     <organization>
         <name>The Apache Software Foundation</name>
